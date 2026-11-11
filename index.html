@@ -1,61 +1,340 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#f5f5f2">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="assets/CSS/site.css">
 <link rel="stylesheet" href="assets/CSS/theme-toggle.css">
 
-  
-<meta name="description" content="Chronodisrup — software engineering and cybersecurity.">
-  <title>Chronodisrup — Software Engineering & Cybersecurity</title>
+<meta name="description" content="Chronodisrup software engineering and cybersecurity.">
+<title>Chronodisrup </title>
 </head>
-<body>
-  <header class="header"><a class="brand" href="index.html"><img src="assets/images/chronodisrup-logo.png" alt="Chronodisrup logo"><span>CHRONODISRUP</span></a>
-<button class="menu-button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
-<nav class="nav">
-  <a href="index.html">Home</a>
-  <a href="about.html">Company</a>
-  <a href="services.html">Services</a>
-  <a href="projects.html">Work</a>
-  <a href="team.html">People</a>
-  <a class="nav-cta" href="contact.html">Contact <b>↗</b></a>
-    <button class="theme-toggle" type="button" aria-label="Switch to dark theme"
-           aria-pressed="false">
-     <span class="theme-icon" aria-hidden="true">◐</span>
-     <span class="theme-label">Dark mode</span>
-   </button>
 
+<body class="page-enter">
 
-</nav>
+<!-- FULL-SCREEN ANIMATED EARTH BACKGROUND -->
+<div class="ambient-earth" aria-hidden="true">
+    <div class="ambient-earth-globe">
+        <span class="ambient-earth-light"></span>
+    </div>
+
+    <div class="ambient-orbit ambient-orbit-a"></div>
+    <div class="ambient-orbit ambient-orbit-b"></div>
+    <div class="ambient-stars"></div>
+    <div class="ambient-vignette"></div>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+    <a class="brand" href="index.html">
+        <img src="assets/images/chronodisrup-logo.png" alt="Chronodisrup logo">
+        <span>CHRONODISRUP</span>
+    </a>
+
+    <button class="menu-button" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">Company</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Work</a>
+        <a href="team.html">People</a>
+        <a class="nav-cta" href="contact.html">Contact <b>↗</b></a>
+
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+            <span class="theme-icon" aria-hidden="true">◐</span>
+            <span class="theme-label">Dark mode</span>
+        </button>
+    </nav>
 </header>
+
 <main>
+
+<!-- HERO -->
 <section class="hero wrap">
-  <div class="hero-copy reveal"><div class="kicker"><i></i> SOFTWARE ENGINEERING&nbsp; / &nbsp;CYBERSECURITY</div>
-    <h1>Technology,<br><span>thoughtfully</span><br>engineered.</h1>
-    <p class="hero-intro">We build digital products and engineer secure, dependable systems. From software development to authorised security testing, we bring clarity to complex technical work.</p>
-    <div class="hero-buttons"><a class="btn btn-dark" href="services.html">Explore our services <b>↗</b></a><a class="underlink" href="projects.html">Discover our work <span>→</span></a></div>
-  </div>
-  <div class="hero-visual reveal"><div class="visual-image"></div><div class="visual-wash"></div><div class="visual-logo"><img src="assets/images/chronodisrup-logo.png" alt="Chronodisrup emblem"></div><div class="visual-caption"><span>CD / ENGINEERING</span><span>01—06</span></div><div class="floating-index">INDEPENDENT<br>TECHNOLOGY COMPANY</div></div>
-  <div class="hero-foot"><span>01</span><span class="rule"></span><span>BUILD WITH INTENTION</span><span class="foot-right">SCROLL TO EXPLORE ↓</span></div>
+
+    <div class="hero-copy reveal">
+        <div class="kicker">
+            <i></i>
+            SOFTWARE ENGINEERING&nbsp; / &nbsp;CYBERSECURITY
+        </div>
+
+        <h1>
+            Technology,<br>
+            <span>thoughtfully</span><br>
+            engineered.
+        </h1>
+
+        <p class="hero-intro">
+            We build digital products and engineer secure, dependable systems.
+            From software development to authorised security testing, we bring
+            clarity to complex technical work.
+        </p>
+
+        <div class="hero-buttons">
+            <a class="btn btn-dark" href="services.html">
+                Explore our services <b>↗</b>
+            </a>
+
+            <a class="underlink" href="projects.html">
+                Discover our work <span>→</span>
+            </a>
+        </div>
+    </div>
+
+    
+
+    <div class="hero-foot">
+        
+        <span class="rule"></span>
+        <span>BUILD WITH INTENTION</span>
+        <span class="foot-right">SCROLL TO EXPLORE ↓</span>
+    </div>
+
 </section>
-<section class="statement section-pad"><div class="wrap statement-grid"><p class="section-label reveal">A DIFFERENT WAY TO BUILD</p><div class="reveal"><h2>Good technology begins<br>with <em>good thinking.</em></h2><p class="statement-text">Chronodisrup works across software engineering and cybersecurity. We create useful systems, examine how they behave, and help make them more resilient.</p></div></div></section>
-<section class="services-preview section-pad wrap"><div class="section-head reveal"><div><p class="section-label">WHAT WE DO</p><h2>Engineering in<br>two disciplines.</h2></div><a class="underlink" href="services.html">All capabilities <span>↗</span></a></div>
-<div class="service-tiles">
-<a class="service-tile software reveal" href="services.html#software"><div class="tile-photo photo-code"></div><div class="tile-overlay"></div><div class="tile-content"><span>01 / SOFTWARE</span><h3>Software<br>engineering</h3><p>Digital products, web platforms and custom software built around real requirements.</p><b>Explore capability ↗</b></div></a>
-<a class="service-tile security reveal" href="services.html#security"><div class="tile-photo photo-security"></div><div class="tile-overlay"></div><div class="tile-content"><span>02 / SECURITY</span><h3>Cybersecurity<br>& penetration testing</h3><p>Authorised testing and security assessment to identify weaknesses and improve resilience.</p><b>Explore capability ↗</b></div></a>
-</div></section>
-<section class="image-break"><div class="image-break-bg"></div><div class="wrap image-break-content reveal"><p class="section-label">THE DETAILS MATTER</p><h2>From the first<br>line of code to<br>the final test.</h2><a class="btn btn-light" href="about.html">Discover Chronodisrup <b>↗</b></a></div></section>
-<section class="work-preview section-pad wrap"><div class="section-head reveal"><div><p class="section-label">SELECTED WORK</p><h2>Ideas put<br>into practice.</h2></div><p class="head-description">A growing collection of software projects, developer utilities and technical experiments.</p></div>
-<div class="work-grid">
-<a class="work-card reveal" href="projects.html"><div class="work-art art-one"><span>AI</span><div class="orbit-art"></div></div><div class="work-meta"><h3>ChronoGPT</h3><span>AI / APPLICATION ↗</span></div></a>
-<a class="work-card reveal" href="projects.html"><div class="work-art art-two"><span>SEC</span><div class="scan-art"></div></div><div class="work-meta"><h3>ChronoCert</h3><span>SECURITY / TLS ↗</span></div></a>
-<a class="work-card reveal" href="projects.html"><div class="work-art art-three"><span>DEV</span><div class="grid-art"></div></div><div class="work-meta"><h3>Repo-scout</h3><span>DEVELOPER TOOLING ↗</span></div></a>
-</div><a class="underlink all-work" href="projects.html">View project index <span>→</span></a></section>
-<section class="quote-band"><div class="wrap quote-wrap reveal"><p class="section-label">A THOUGHT WORTH KEEPING</p><blockquote>“The more I study, the more insatiable do I feel my genius for it to be.”</blockquote><div class="quote-credit"><span></span> ADA LOVELACE <small>— LETTER TO MARY SOMERVILLE, 1843</small></div></div></section>
-<section class="contact-strip section-pad"><div class="wrap contact-strip-inner reveal"><div><p class="section-label">HAVE A PROJECT IN MIND?</p><h2>Let's make<br><em>something matter.</em></h2></div><a class="btn btn-dark" href="contact.html">Talk to our team <b>↗</b></a></div></section>
+
+<!-- STATEMENT -->
+<section class="statement section-pad">
+    <div class="wrap statement-grid">
+
+        <p class="section-label reveal">A DIFFERENT WAY TO BUILD</p>
+
+        <div class="reveal">
+            <h2>
+                Good technology begins<br>
+                with <em>good thinking.</em>
+            </h2>
+
+            <p class="statement-text">
+                Chronodisrup works across software engineering and cybersecurity.
+                We create useful systems, examine how they behave, and help make
+                them more resilient.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services-preview section-pad wrap">
+
+    <div class="section-head reveal">
+        <div>
+            <p class="section-label">WHAT WE DO</p>
+            <h2>Engineering in<br>two disciplines.</h2>
+        </div>
+
+        <a class="underlink" href="services.html">
+            All capabilities <span>↗</span>
+        </a>
+    </div>
+
+    <div class="service-tiles">
+
+        <a class="service-tile software reveal" href="services.html#software">
+            <div class="tile-photo photo-code"></div>
+            <div class="tile-overlay"></div>
+
+            <div class="tile-content">
+                
+                <h3>Software<br>engineering</h3>
+                <p>
+                    Digital products, web platforms and custom software
+                    built around real requirements.
+                </p>
+                <b>Explore capability ↗</b>
+            </div>
+        </a>
+
+        <a class="service-tile security reveal" href="services.html#security">
+            <div class="tile-photo photo-security"></div>
+            <div class="tile-overlay"></div>
+
+            <div class="tile-content">
+                
+                <h3>Cybersecurity<br>& penetration testing</h3>
+                <p>
+                    Authorised testing and security assessment to identify
+                    weaknesses and improve resilience.
+                </p>
+                <b>Explore capability ↗</b>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+<!-- IMAGE BREAK -->
+<section class="image-break">
+    <div class="image-break-bg"></div>
+
+    <div class="wrap image-break-content reveal">
+        <p class="section-label">THE DETAILS MATTER</p>
+
+        <h2>
+            From the first<br>
+            line of code to<br>
+            the final test.
+        </h2>
+
+        <a class="btn btn-light" href="about.html">
+            Discover Chronodisrup <b>↗</b>
+        </a>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="work-preview section-pad wrap">
+
+    <div class="section-head reveal">
+        <div>
+            <p class="section-label">SELECTED WORK</p>
+            <h2>Ideas put<br>into practice.</h2>
+        </div>
+
+        <p class="head-description">
+            A growing collection of software projects, developer utilities
+            and technical experiments.
+        </p>
+    </div>
+
+    <div class="work-grid">
+
+        <a class="work-card reveal" href="projects.html">
+            <div class="work-art art-one">
+                <span>AI</span>
+                <div class="orbit-art"></div>
+            </div>
+
+            <div class="work-meta">
+                <h3>ChronoGPT</h3>
+                <span>AI / APPLICATION ↗</span>
+            </div>
+        </a>
+
+        <a class="work-card reveal" href="projects.html">
+            <div class="work-art art-two">
+                <span>SEC</span>
+                <div class="scan-art"></div>
+            </div>
+
+            <div class="work-meta">
+                <h3>ChronoCert</h3>
+                <span>SECURITY / TLS ↗</span>
+            </div>
+        </a>
+
+        <a class="work-card reveal" href="projects.html">
+            <div class="work-art art-three">
+                <span>DEV</span>
+                <div class="grid-art"></div>
+            </div>
+
+            <div class="work-meta">
+                <h3>Repo-scout</h3>
+                <span>DEVELOPER TOOLING ↗</span>
+            </div>
+        </a>
+
+    </div>
+
+    <a class="underlink all-work" href="projects.html">
+        View project index <span>→</span>
+    </a>
+
+</section>
+
+<!-- QUOTE -->
+<section class="quote-band">
+    <div class="wrap quote-wrap reveal">
+
+        <p class="section-label">A THOUGHT WORTH KEEPING</p>
+
+        <blockquote>
+            “The more I study, the more insatiable do I feel my genius for it to be.”
+        </blockquote>
+
+        <div class="quote-credit">
+            <span></span>
+            ADA LOVELACE
+            <small>— LETTER TO MARY SOMERVILLE, 1843</small>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-strip section-pad">
+    <div class="wrap contact-strip-inner reveal">
+
+        <div>
+            <p class="section-label">HAVE A PROJECT IN MIND?</p>
+            <h2>
+                Let's make<br>
+                <em>something matter.</em>
+            </h2>
+        </div>
+
+        <a class="btn btn-dark" href="contact.html">
+            Talk to our team <b>↗</b>
+        </a>
+
+    </div>
+</section>
+
 </main>
-  <footer class="footer"><div class="footer-main wrap"><div><a class="brand footer-brand" href="index.html"><img src="assets/images/chronodisrup-logo.png" alt=""><span>CHRONODISRUP</span></a><p>Software engineering<br>and cybersecurity.</p></div><div class="footer-nav"><a href="services.html">Services</a><a href="projects.html">Work</a><a href="team.html">People</a><a href="contact.html">Contact</a></div><div class="footer-note">Independent thinking.<br>Thoughtful engineering.</div></div><div class="footer-bottom wrap"><span>© <span data-year></span> Chronodisrup</span><span>SOFTWARE ENGINEERING&nbsp;&nbsp; / &nbsp;&nbsp;CYBERSECURITY</span><a href="#top">BACK TO TOP ↑</a></div></footer>
-  <script src="assets/js/site.js"></script>
-  <script src="assets/js/theme-toggle.js"></script>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="footer-main wrap">
+
+        <div>
+            <a class="brand footer-brand" href="index.html">
+                <img src="assets/images/chronodisrup-logo.png" alt="">
+                <span>CHRONODISRUP</span>
+            </a>
+
+            <p>
+                Software engineering<br>
+                and cybersecurity.
+            </p>
+        </div>
+
+        <div class="footer-nav">
+            <a href="services.html">Services</a>
+            <a href="projects.html">Work</a>
+            <a href="team.html">People</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-note">
+            Independent thinking.<br>
+            Thoughtful engineering.
+        </div>
+
+    </div>
+
+    <div class="footer-bottom wrap">
+        <span>© <span data-year></span> Chronodisrup</span>
+        <span>SOFTWARE ENGINEERING&nbsp;&nbsp; / &nbsp;&nbsp;CYBERSECURITY</span>
+        <a href="#top">BACK TO TOP ↑</a>
+    </div>
+
+</footer>
+
+<script src="assets/js/site.js"></script>
+<script src="assets/js/theme-toggle.js"></script>
+
 </body>
 </html>
