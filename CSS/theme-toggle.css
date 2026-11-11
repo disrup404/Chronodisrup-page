@@ -1,0 +1,68 @@
+
+/* Chronodisrup light/dark theme switch */
+.theme-toggle {
+  display: inline-flex; align-items: center; gap: 9px;
+  border: 1px solid var(--theme-toggle-border, #c9cdd1);
+  background: transparent; color: var(--ink);
+  padding: 9px 12px; font: 600 10px "DM Sans", sans-serif;
+  cursor: pointer; white-space: nowrap; transition: .2s ease;
+}
+.theme-toggle:hover { border-color: #1768e8; color: #1768e8; }
+.theme-icon { font-size: 15px; line-height: 1; }
+
+/* Dark palette */
+body.dark-theme {
+  --ink: #edf0f4; --muted: #aab2bd; --paper: #111419;
+  --line: #343a43; background: var(--paper); color: var(--ink);
+}
+body.dark-theme .header {
+  background: rgba(17,20,25,.94); border-color: #303640;
+}
+body.dark-theme .nav { color: #b8c0ca; }
+body.dark-theme .nav-cta { border-color: #48515d; color: #edf0f4 !important; }
+body.dark-theme .theme-toggle { border-color: #48515d; color: #edf0f4; }
+body.dark-theme .menu-button span { background: #edf0f4; }
+
+body.dark-theme .statement,
+body.dark-theme .quote-band,
+body.dark-theme .contact-strip,
+body.dark-theme .values-section,
+body.dark-theme .team-note { background: #1a1f26; }
+
+body.dark-theme .hero-intro,
+body.dark-theme .page-lead,
+body.dark-theme .statement-text,
+body.dark-theme .head-description,
+body.dark-theme .prose,
+body.dark-theme .values-list p,
+body.dark-theme .service-copy > p:not(.section-label),
+body.dark-theme .other-capabilities p,
+body.dark-theme .portfolio-description p:not(.section-label),
+body.dark-theme .founder p:not(.section-label),
+body.dark-theme .team-note-inner > p:last-child,
+body.dark-theme .contact-side > p:not(.section-label) { color: #aab2bd; }
+
+body.dark-theme .service-copy li { color: #d0d6df; }
+body.dark-theme .values-list article,
+body.dark-theme .work-meta,
+body.dark-theme .contact-fact { border-color: #343a43; }
+body.dark-theme .other-capabilities { border-color: #343a43; }
+body.dark-theme .other-capabilities article { border-color: #48515d; }
+body.dark-theme .work-meta span,
+body.dark-theme .portfolio-description > span { color: #aab2bd; }
+
+body.dark-theme .contact-form input,
+body.dark-theme .contact-form select,
+body.dark-theme .contact-form textarea {
+  color: #edf0f4; border-color: #48515d; background: transparent;
+}
+body.dark-theme .contact-form input::placeholder,
+body.dark-theme .contact-form textarea::placeholder { color: #818b98; }
+body.dark-theme .contact-fact span,
+body.dark-theme .section-label,
+body.dark-theme .kicker { color: #aab2bd; }
+body.dark-theme .nav.open { background: #111419; }
+
+@media (max-width: 680px) {
+  .nav .theme-toggle { align-self: flex-start; margin-top: 12px; }
+}
