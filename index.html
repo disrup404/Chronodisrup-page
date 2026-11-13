@@ -4,7 +4,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f5f5f2">
+    <script>try { if (localStorage.getItem("chronodisrup-theme") !== "light") document.documentElement.classList.add("dark-theme"); } catch (_) { document.documentElement.classList.add("dark-theme"); }</script>
+<meta name="theme-color" content="#080c13">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,12 +39,12 @@
         <span>CHRONODISRUP</span>
     </a>
 
-    <button class="menu-button" aria-label="Open navigation" aria-expanded="false">
+    <button class="menu-button" type="button" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false">
         <span></span>
         <span></span>
     </button>
 
-    <nav class="nav">
+    <nav class="nav" id="primary-navigation">
         <a href="index.html">Home</a>
         <a href="about.html">Company</a>
         <a href="services.html">Services</a>
@@ -333,8 +334,8 @@
 
 </footer>
 
-<script src="assets/js/site.js"></script>
-<script src="assets/js/theme-toggle.js"></script>
+<script src="assets/JS/site.js"></script>
+<script src="assets/JS/theme-toggle.js"></script>
 
 </body>
 </html>
