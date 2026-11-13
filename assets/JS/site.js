@@ -89,7 +89,7 @@
           `Interest: ${data.get("interest")}\n\n${data.get("message")}`
         );
         window.location.href =
-          `mailto:REPLACE-WITH-COMPANY-EMAIL?subject=${subject}&body=${body}`;
+        `mailto:chronodisrup@gmail.com?subject=${subject}&body=${body}`;
         const note = document.querySelector("#form-note");
         if (note) note.textContent =
           "Your email application should open with the enquiry prepared. Configure the company email in site.js before launch.";
